@@ -8,10 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className="footer-subscription">
                 <p className='footer-subscription-heading'>
-                    Join the Adventure newsletter to recieve our best vacation deals 
-                </p>
-                <p className='footer-subscription-text'>
-                    You can Unsubscribe at anytime.
+                   Email Enquiries Here
                 </p>
                 <div className='input-areas'>
                     <form>
@@ -23,14 +20,6 @@ function Footer() {
             <div className='footer-links'>
                 <div className='footer-links-wrapper'>
                     <div className='footer-link-items'>
-                        <h2>About us</h2>
-                        <Link to='/signup'>How it works</Link>
-                        <Link to='/signup'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Service</Link>
-                    </div>
-                    <div className='footer-link-items'>
                         <h2>Contact us</h2>
                         <Link to='/signup'>Contact</Link>
                         <Link to='/signup'>Support</Link>
@@ -39,13 +28,6 @@ function Footer() {
                     </div>
                 </div>
                 <div className='footer-links-wrapper'>
-                    <div className='footer-link-items'>
-                        <h2>Vidoes</h2>
-                        <Link to='/signup'>Submit Videos</Link>
-                        <Link to='/signup'>Ambassadors</Link>
-                        <Link to='/'>Agency</Link>
-                        <Link to='/'>Influencers</Link>
-                    </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
                         <Link to='/signup'>Instagram</Link>
@@ -70,14 +52,8 @@ function Footer() {
                         <Link className='social-icon-link instagram' to='/' target='_blank' aria-label='Instagram'>
                             <i className='fab fa-instagram'></i>
                         </Link>
-                        <Link className='social-icon-link youtube' to='/' target='_blank' aria-label='Youtube'>
-                            <i className='fab fa-youtube'></i>
-                        </Link>
                         <Link className='social-icon-link twitter' to='/' target='_blank' aria-label='Twitter'>
                             <i className='fab fa-twitter'></i>
-                        </Link>
-                        <Link className='social-icon-link linkedin' to='/' target='_blank' aria-label='LinkedIn'>
-                            <i className='fab fa-linkedin'></i>
                         </Link>
                     </div>
                 </div>

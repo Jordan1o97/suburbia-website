@@ -9,7 +9,7 @@ import firebase from 'firebase/app'
 import "firebase/firestore";
 import bigWriteData from './Script/databaseWriter'
 
-bigWriteData(true)
+// bigWriteData(true)
 
 function App() {
   return (
