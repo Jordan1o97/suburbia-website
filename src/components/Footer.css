@@ -27,6 +27,7 @@
   .footer-subscription-heading {
     margin-bottom: 24px;
     font-size: 24px;
+    font-family: acier-bat-gris, sans-serif;
   }
   
   .footer-subscription-text {
@@ -35,14 +36,16 @@
   }
   
   .footer-input {
+    flex: 1;
+    margin: 25;
+    width: 100%;
     padding: 8px 20px;
-    border-radius: 2px;
-    margin-right: 10px;
+    border-radius: 4px;
+    margin-right: 8px 0;;
     outline: none;
-    border: none;
+    border: 1px solid #fff;
     font-size: 18px;
     margin-bottom: 16px;
-    border: 1px solid #fff;
   }
   
   .footer-links {

@@ -1,7 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import emailjs from 'emailjs-com';
 import { Button } from './Button'
+import { USER_ID, TEMPLATE_ID, SERVICE_ID } from '../util/emailkey';
 import './Footer.css'
+
+
+function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+
 
 function Footer() {
     return (
@@ -11,9 +27,17 @@ function Footer() {
                    Email Enquiries Here
                 </p>
                 <div className='input-areas'>
-                    <form>
-                        <input type='email' name='email' placeholder='Your Email' className='footer-input'/>
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
+                    <form className="footer-input" onSubmit={sendEmail}>
+                        <label>Name</label>
+                        <input type="text" name="from_name" />
+
+                        <label>Email</label>
+                        <input type="email" name="from_email" />
+
+                        <label>Message</label>
+                        <textarea name="message" />
+                        
+                        <input type="submit" value="Send" />
                     </form>
                 </div>
             </section>
