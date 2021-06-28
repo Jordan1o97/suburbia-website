@@ -8,8 +8,14 @@ import SignUp from './components/pages/SignUp'
 import firebase from 'firebase/app'
 import "firebase/firestore";
 import bigWriteData from './Script/databaseWriter'
+import { getHats, getHoodies, getTShirts } from './Script/databaseReciever'
 
 // bigWriteData(true)
+
+getHats()
+getTShirts()
+getHoodies()
+
 
 function App() {
   return (
